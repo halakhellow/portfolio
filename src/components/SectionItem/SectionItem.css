@@ -1,0 +1,22 @@
+.SectionItem {
+  display: inline-block;
+  width: 12rem;
+  height: 12rem;
+  background-image: url("../../images/star.png");
+  background-position: center;
+  background-size: contain;
+  color: black;
+}
+
+.SectionItem-infos {
+  position: relative;
+  top: 4.5rem;
+}
+
+.SectionItem-icon {
+  font-size: 2rem;
+}
+
+.SectionItem-name {
+  margin-top: 4px;
+}
