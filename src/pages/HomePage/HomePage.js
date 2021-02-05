@@ -1,6 +1,6 @@
 import React from "react";
 
-import Sections from "../Sections/Sections";
+import Sections from "../../components/Sections/Sections";
 
 import "./HomePage.css";
 
