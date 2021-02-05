@@ -1,3 +1,28 @@
 .HomePage-title {
   margin-top: 0;
+  padding-top: 6rem;
+  font-size: 2.5rem;
+}
+
+.HomePage-bio {
+  width: 40%;
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.HomePage .Sections {
+  display: flex;
+  justify-content: center;
+  gap: -5px;
+  margin-top: 5rem;
+}
+
+.HomePage .Sections .SectionItem:not(:first-child) {
+  margin-left: -2rem;
+}
+
+.HomePage .Sections .SectionItem:nth-of-type(2),
+.HomePage .Sections .SectionItem:nth-of-type(4) {
+  margin-top: -3rem;
 }
