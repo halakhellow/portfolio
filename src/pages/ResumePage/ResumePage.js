@@ -9,6 +9,7 @@ let ResumePage = () => {
   return (
     <div>
       <Header />
+      <h1>Resume :</h1>
       <iframe src={`${resume}#toolbar=0`} height="387px"></iframe>
       <Footer />
     </div>
