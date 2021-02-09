@@ -6,3 +6,7 @@
   width: 2rem;
   padding: 1rem;
 }
+
+.Header img:hover {
+  animation: pulse 1s;
+}
