@@ -1,5 +1,6 @@
 .Header {
   display: flex;
+  justify-content: space-between;
 }
 
 .Header img {
@@ -9,4 +10,22 @@
 
 .Header img:hover {
   animation: pulse 1s;
+}
+
+.Header .Header-sections {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.Header .Header-sections a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 6px;
+  font-size: 1.1rem;
+}
+
+.Header .Header-sections a.active {
+  color: #fff498;
+  font-size: 1.2rem;
 }

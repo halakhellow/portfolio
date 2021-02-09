@@ -9,7 +9,7 @@ import "./HomePage.css";
 let HomePage = () => {
   return (
     <div className="HomePage">
-      <Header />
+      <Header home />
       <h1 className="HomePage-title">
         Hey, It's <span>Hala Alkhellow</span>
       </h1>
