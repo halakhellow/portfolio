@@ -12,6 +12,16 @@
   width: 5rem;
 }
 
+.Footer a:first-of-type:hover i {
+  color: gray;
+}
+.Footer a:nth-of-type(2):hover i {
+  color: #5b93d6;
+}
+.Footer a:last-of-type:hover i {
+  color: #7f3fa5;
+}
+
 .Footer a i {
   color: white;
   font-size: 1.5rem;

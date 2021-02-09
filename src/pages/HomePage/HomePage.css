@@ -6,7 +6,7 @@
 
 .HomePage-title span {
   display: inline-block;
-  background: #fbfcfe -webkit-gradient(linear, 100% 0, 0 0, from(#fbfcfe), color-stop(0.5, #ffeb3b), to(#fbfcfe));
+  background: #fbfcfe -webkit-gradient(linear, 100% 0, 0 0, from(#fbfcfe), color-stop(0.5, #fff498), to(#fbfcfe));
   background-position: -4rem top;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
