@@ -9,15 +9,17 @@ import "./HomePage.css";
 let HomePage = () => {
   return (
     <div className="HomePage">
-      <Header home />
-      <h1 className="HomePage-title">
-        Hey, It's <span>Hala Alkhellow</span>
-      </h1>
-      <p className="HomePage-bio">
-        A React developer from Syria with proficiency in Redux, Hooks, vanilla
-        JavaScript, HTML and CSS.
-      </p>
-      <Sections />
+      <div className="page">
+        <Header home />
+        <h1 className="HomePage-title">
+          Hey, It's <span>Hala Alkhellow</span>
+        </h1>
+        <p className="HomePage-bio">
+          A React developer from Syria with proficiency in Redux, Hooks, vanilla
+          JavaScript, HTML and CSS.
+        </p>
+        <Sections />
+      </div>
       <Footer />
     </div>
   );
