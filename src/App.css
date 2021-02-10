@@ -5,6 +5,13 @@
   font-family: "Capriola";
 }
 
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 @keyframes pulse {
   0% {
     transform: scaleX(1) scaleY(1);
