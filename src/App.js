@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import ResumePage from "./pages/ResumePage/ResumePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
@@ -23,7 +23,7 @@ function App() {
             <Switch location={location}>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/about" component={AboutPage} />
-              <Route exact path="/projects" component={ProjectsPage} />
+              <Route exact path="/portfolio" component={PortfolioPage} />
               <Route exact path="/resume" component={ResumePage} />
               <Route exact path="/contact" component={ContactPage} />
             </Switch>

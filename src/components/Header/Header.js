@@ -16,8 +16,8 @@ let Header = ({ home }) => {
           <NavLink to="/about" activeClassName="active">
             About
           </NavLink>
-          <NavLink to="/projects" activeClassName="active">
-            Projects
+          <NavLink to="/portfolio" activeClassName="active">
+            Portfolio
           </NavLink>
           <NavLink to="/resume" activeClassName="active">
             Resume
