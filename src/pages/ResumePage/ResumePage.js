@@ -5,13 +5,18 @@ import Footer from "../../components/Footer/Footer";
 
 import resume from "./resume.pdf";
 
+import "./ResumePage.css";
+
 let ResumePage = () => {
   return (
-    <div>
+    <div className="ResumePage">
       <div className="page">
         <Header />
-        <h1>Resume :</h1>
+        <h2>Resume :</h2>
         <iframe src={`${resume}#toolbar=0`} height="387px"></iframe>
+        <a href={resume} download className="download-button">
+          <i class="fa fa-download"></i>Download
+        </a>
       </div>
       <Footer />
     </div>
