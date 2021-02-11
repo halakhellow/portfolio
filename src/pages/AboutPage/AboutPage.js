@@ -40,14 +40,14 @@ let AboutPage = () => {
             Want to connect? <Link to="/contact">Let's go!</Link>
           </p>
           <div className="social-media-links">
+            <a href="https://github.com/halakhellow" target="_blank">
+              <i className="fab fa-github"></i>
+            </a>
             <a href="https://facebook.com/hallosh" target="_blank">
               <i className="fab fa-facebook"></i>
             </a>
             <a href="https://instagram.com/hall0sh" target="_blank">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://github.com/halakhellow" target="_blank">
-              <i className="fab fa-github"></i>
             </a>
             <a href="https://linkedin.com/in/halakhellow" target="_blank">
               <i className="fab fa-linkedin"></i>
