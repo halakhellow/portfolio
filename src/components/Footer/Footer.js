@@ -11,9 +11,6 @@ let Footer = () => {
       <a href="https://linkedin.com/in/halakhellow" target="_blank">
         <i className="fab fa-linkedin"></i>
       </a>
-      <a href="https://instagram.com/hall0sh" target="_blank">
-        <i className="fab fa-instagram"></i>
-      </a>
     </div>
   );
 };
