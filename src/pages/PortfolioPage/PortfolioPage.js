@@ -15,7 +15,7 @@ let PortfolioPage = () => {
         <div className="PortfolioPage-content">
           <h3>Applications with React.js</h3>
           <ReactApplications />
-          <h3>Applications with vanilla JavaSript</h3>
+          <h3>Applications with vanilla JavaScript</h3>
           <VanillaJsApplications />
         </div>
       </div>

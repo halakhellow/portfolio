@@ -12,13 +12,13 @@ let VanillaJsApplications = () => {
       <Application
         title="GITHUB USERS' INFOS"
         imageSrc={githubAppImg}
-        description="simple app created with Html , Css &amp; JavaSript"
+        description="App deals with GitHub API"
         appLink="https://halakhellow.github.io/GitHub-Users-Infos/"
       />
       <Application
         title="MOVIES"
         imageSrc={moviesAppImg}
-        description="Plain javascript app dealing with API and fetching data
+        description="App deals with API and fetching data
         and using url search parameters to set up navigation routes"
         appLink="https://halakhellow.github.io/Movies/"
       />

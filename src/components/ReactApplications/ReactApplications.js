@@ -10,7 +10,7 @@ let ReactApplications = () => {
       <Application
         title="TODO LIST"
         imageSrc={todoAppImg}
-        description="training on forms with React"
+        description="App uses React forms (controlled components) + react-beautiful-dnd"
         appLink="https://halakhellow.github.io/todo-list/"
       />
     </div>
