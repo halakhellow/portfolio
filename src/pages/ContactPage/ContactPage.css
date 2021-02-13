@@ -12,6 +12,12 @@
   margin-bottom: 1.3rem;
 }
 
+.ContactPage #subject,
+.ContactPage textarea {
+  font-family: inherit;
+  padding: 3px 10px;
+}
+
 .ContactPage #subject {
   width: 70%;
   height: 1.5rem;

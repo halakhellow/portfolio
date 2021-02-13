@@ -13,7 +13,7 @@ let ContactPage = () => {
         <h1>Let's Connect !</h1>
         <form
           action="mailto:halakhellow1996@gmail.com"
-          method="GET"
+          method="POST"
           enctype="text/plain"
         >
           <label htmlFor="subject"> Subject :</label>
