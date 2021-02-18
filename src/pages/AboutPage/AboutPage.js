@@ -14,7 +14,7 @@ let AboutPage = () => {
         <div className="AboutPage-info">
           <p>
             Hey there :) <br /> I'm Hala Alkhellow, a self-taught React
-            developer based in Aleppo, Syria.
+            developer.
             <br /> I finished university with a bachelor degree in Communication
             Engineering from Aleppo University. We had some programming subjects
             and I enjoyed them at that time , so decided to shift career and

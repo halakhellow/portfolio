@@ -24,7 +24,7 @@ let HomePage = () => {
           </div>
         </h1>
         <p className="HomePage-bio">
-          A Frontend developer from Syria, specializing in React development.
+          A Frontend developer, specializing in React development.
         </p>
         <Sections />
       </div>
