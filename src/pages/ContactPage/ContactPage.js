@@ -7,8 +7,8 @@ import "./ContactPage.css";
 
 let ContactPage = () => {
   return (
-    <div className="ContactPage">
-      <div className="page">
+    <div className="ContactPage page">
+      <div className="page-content">
         <Header />
         <h1>Let's Connect !</h1>
         <form

@@ -7,8 +7,8 @@ import "./AboutPage.css";
 
 let AboutPage = () => {
   return (
-    <div className="AboutPage">
-      <div className="page">
+    <div className="AboutPage page">
+      <div className="page-content">
         <Header />
         <h3>ABOUT ME</h3>
         <div className="AboutPage-info">

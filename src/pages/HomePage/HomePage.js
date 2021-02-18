@@ -8,8 +8,8 @@ import "./HomePage.css";
 
 let HomePage = () => {
   return (
-    <div className="HomePage">
-      <div className="page">
+    <div className="HomePage page">
+      <div className="page-content">
         <Header home />
         <h1 className="HomePage-title">
           <div className="iamSection">Hi, I'm &nbsp;</div>

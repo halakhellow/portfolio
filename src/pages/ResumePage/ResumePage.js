@@ -9,8 +9,8 @@ import "./ResumePage.css";
 
 let ResumePage = () => {
   return (
-    <div className="ResumePage">
-      <div className="page">
+    <div className="ResumePage page">
+      <div className="page-content">
         <Header />
         <h2>Resume :</h2>
         <iframe src={`${resume}#toolbar=0`} height="387px"></iframe>

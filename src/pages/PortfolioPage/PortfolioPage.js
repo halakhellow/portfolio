@@ -9,8 +9,8 @@ import "./PortfolioPage.css";
 
 let PortfolioPage = () => {
   return (
-    <div className="PortfolioPage">
-      <div className="page">
+    <div className="PortfolioPage page">
+      <div className="page-content">
         <Header />
         <div className="PortfolioPage-content">
           <h3>Applications with React.js</h3>
