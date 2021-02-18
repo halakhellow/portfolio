@@ -14,8 +14,8 @@ let HomePage = () => {
         <h1 className="HomePage-title">
           <div className="iamSection">Hi, I'm &nbsp;</div>
           <div className="slideSection">
-            <div class="scroller">
-              <div class="inner">
+            <div className="scroller">
+              <div className="inner">
                 <p>Hala Alkhellow</p>
                 <p>FrontEnd Developer</p>
                 <p>React Developer</p>

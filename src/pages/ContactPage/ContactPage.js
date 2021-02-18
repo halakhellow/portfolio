@@ -14,7 +14,7 @@ let ContactPage = () => {
         <form
           action="mailto:halakhellow1996@gmail.com"
           method="POST"
-          enctype="text/plain"
+          encType="text/plain"
         >
           <label htmlFor="subject"> Subject :</label>
           <input id="subject" name="subject" type="text" />

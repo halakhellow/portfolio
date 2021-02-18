@@ -10,7 +10,7 @@ let Application = ({ imageSrc, title, description, appLink }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <p>
-          <a class="Application-link" href={appLink} target="_blank"></a>
+          <a className="Application-link" href={appLink} target="_blank"></a>
         </p>
       </div>
     </div>

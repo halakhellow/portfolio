@@ -15,7 +15,7 @@ let ResumePage = () => {
         <h2>Resume :</h2>
         <iframe src={`${resume}#toolbar=0`} height="387px"></iframe>
         <a href={resume} download className="download-button">
-          <i class="fa fa-download"></i>Download
+          <i className="fa fa-download"></i>Download
         </a>
       </div>
       <Footer />
