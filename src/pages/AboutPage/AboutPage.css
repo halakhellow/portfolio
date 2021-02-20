@@ -3,13 +3,13 @@
 }
 
 .AboutPage-info {
-  width: 59%;
-  padding: 1rem;
-  margin-left: 2rem;
+  width: 60%;
+  padding: 0.5rem 1rem;
+  margin: auto;
   background-color: rgb(5 5 14 / 30%);
   font-size: 1.1rem;
-  line-height: 2rem;
-  text-align: justify;
+  line-height: 1.8rem;
+  text-align: left;
   border-radius: 10px;
 }
 

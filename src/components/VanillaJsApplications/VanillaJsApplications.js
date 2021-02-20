@@ -18,14 +18,13 @@ let VanillaJsApplications = () => {
       <Application
         title="MOVIES"
         imageSrc={moviesAppImg}
-        description="App deals with API and fetching data
-        and using url search parameters to set up navigation routes"
+        description="App deals with fetching data from an API and using url search parameters to set up navigation routes"
         appLink="https://halakhellow.github.io/Movies/"
       />
       <Application
         title="TIC TAC TOE"
         imageSrc={xoAppImg}
-        description="Application created with HTML, CSS and plain javascript."
+        description="Application created with HTML, CSS and vanilla javascript."
         appLink="https://halakhellow.github.io/Tic-Tac-Toe/"
       />
     </div>
