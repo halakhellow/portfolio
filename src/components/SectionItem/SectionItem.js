@@ -6,7 +6,7 @@ import "./SectionItem.css";
 let SectionItem = ({ name, faClass }) => {
   let linkref = name.toLowerCase();
   return (
-    <Link to={`/${linkref}`} className="SectionItem">
+    <Link to={`/portfolio/${linkref}`} className="SectionItem">
       <div className="SectionItem-infos">
         <span className={`${faClass} SectionItem-icon`}></span>
         <p className="SectionItem-name">{name}</p>

@@ -22,13 +22,13 @@ let AboutPage = () => {
             engineer throughout mentorship sessions. <br />
             During this time I made some projects with vanilla JavaScript then
             started to use React js. You can check them &nbsp;
-            <Link to="/portfolio">here.</Link>
+            <Link to="/portfolio/work">here.</Link>
           </p>
           <p>
             Proficient in Redux js, Hooks, vanilla JavaScript, HTML and CSS ...
             <br />
             and other skills mentioned in my &nbsp;
-            <Link to="/resume">Resume.</Link>
+            <Link to="/portfolio/resume">Resume.</Link>
           </p>
 
           <p>
@@ -37,7 +37,7 @@ let AboutPage = () => {
             series, and learning languages.
           </p>
           <p>
-            Want to connect? <Link to="/contact">Let's go!</Link>
+            Want to connect? <Link to="/portfolio/contact">Let's go!</Link>
           </p>
           <div className="social-media-links">
             <a href="https://github.com/halakhellow" target="_blank">
