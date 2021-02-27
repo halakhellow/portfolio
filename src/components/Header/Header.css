@@ -15,7 +15,7 @@
 .Header .Header-sections {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 15px 4px;
 }
 
 .Header .Header-sections a {
@@ -28,4 +28,17 @@
 .Header .Header-sections a.active {
   color: #fff498;
   font-size: 1.2rem;
+}
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media only Screen and (min-width: 250px) and (max-width: 450px) {
+  .Header img {
+    width: 1.5rem;
+  }
+  .Header .Header-sections a,
+  .Header .Header-sections a.active {
+    font-size: 0.9rem;
+    margin: 0 3px;
+  }
 }

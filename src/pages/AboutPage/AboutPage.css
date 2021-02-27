@@ -42,3 +42,14 @@
 .social-media-links a:hover i {
   color: whitesmoke;
 }
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media only Screen and (min-width: 250px) and (max-width: 700px) {
+  .Header-sections a {
+    font-size: 0.7rem;
+  }
+  .AboutPage-info {
+    width: 95%;
+  }
+}

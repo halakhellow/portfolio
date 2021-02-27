@@ -55,3 +55,18 @@
   opacity: 0;
   filter: alpha(opacity=0);
 }
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media only Screen and (min-width: 250px) and (max-width: 450px) {
+  .Application {
+    width: 16rem;
+    height: 9rem;
+  }
+  .Application-description {
+    font-size: 0.9rem;
+  }
+  .Application h3 {
+    margin-top: 10%;
+  }
+}

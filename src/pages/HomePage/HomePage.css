@@ -83,3 +83,49 @@
 .HomePage .Sections .SectionItem:nth-of-type(4) {
   margin-top: -3rem;
 }
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media only Screen and (min-width: 250px) and (max-width: 489px) {
+  .HomePage-title {
+    font-size: 1.5rem;
+  }
+  .HomePage-bio {
+    font-size: 1.1rem;
+  }
+
+  .HomePage .Sections {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+  }
+
+  .SectionItem {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto !important;
+  }
+
+  .SectionItem-infos {
+    top: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .SectionItem-infos p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only Screen and (min-width: 250px) and (max-width: 670px) {
+  .HomePage-title {
+    flex-direction: column;
+  }
+  .HomePage-title .iamSection,
+  .HomePage-title .slideSection {
+    text-align: center;
+  }
+  .HomePage-bio {
+    width: 90%;
+  }
+}
