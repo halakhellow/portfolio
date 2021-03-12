@@ -4,10 +4,17 @@ import Application from "../../components/Application/Application";
 
 import todoAppImg from "../../images/todoApp.png";
 import hangmanImg from "../../images/hangmanApp.png";
+import jokesAppImg from "../../images/jokesApp.png";
 
 let ReactApplications = () => {
   return (
     <div>
+      <Application
+        title="JOKES"
+        imageSrc={jokesAppImg}
+        description="App deals with fetching jokes from an API &amp; uses react-flip-move library"
+        appLink="https://halakhellow.github.io/jokes-app/"
+      />
       <Application
         title="HANGMAN"
         imageSrc={hangmanImg}
