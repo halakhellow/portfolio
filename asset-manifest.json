@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c00c679d.chunk.css",
-    "main.js": "/portfolio/static/js/main.9d644643.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9d644643.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.2cc1cc7b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2cc1cc7b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ec82ec60.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ec82ec60.js.map",
     "static/js/2.db1b9200.chunk.js": "/portfolio/static/js/2.db1b9200.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/index.css": "/portfolio/static/media/galaxy.9e387c85.png",
     "static/media/githubApp.6fe280a8.png": "/portfolio/static/media/githubApp.6fe280a8.png",
     "static/media/hangmanApp.27157c13.png": "/portfolio/static/media/hangmanApp.27157c13.png",
+    "static/media/jokesApp.9fea5b00.png": "/portfolio/static/media/jokesApp.9fea5b00.png",
     "static/media/moviesApp.ef38c7d2.png": "/portfolio/static/media/moviesApp.ef38c7d2.png",
     "static/media/resume.0ce1e95e.pdf": "/portfolio/static/media/resume.0ce1e95e.pdf",
     "static/media/todoApp.3a5b6769.png": "/portfolio/static/media/todoApp.3a5b6769.png",
@@ -24,6 +25,6 @@
     "static/js/runtime-main.ec82ec60.js",
     "static/js/2.db1b9200.chunk.js",
     "static/css/main.c00c679d.chunk.css",
-    "static/js/main.9d644643.chunk.js"
+    "static/js/main.2cc1cc7b.chunk.js"
   ]
 }
