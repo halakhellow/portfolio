@@ -19,7 +19,7 @@ let AboutPage = () => {
             Engineering from Aleppo University. We had some programming subjects
             and I enjoyed them at that time , so decided to shift career and
             started studying online with help from a professional software
-            engineer throughout mentorship sessions. <br />
+            engineers throughout mentorship sessions. <br />
             During this time I made some projects with vanilla JavaScript then
             started to use React js. You can check them &nbsp;
             <Link to="/portfolio/work">here.</Link>
