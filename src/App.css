@@ -63,18 +63,18 @@
 
   10%,
   20% {
-    transform: scale(0.9) rotate(-8deg);
+    transform: scale(0.9) rotate(-10deg);
   }
 
   30%,
   50%,
   70% {
-    transform: scale(1.3) rotate(8deg);
+    transform: scale(1.3) rotate(10deg);
   }
 
   40%,
   60% {
-    transform: scale(1.3) rotate(-8deg);
+    transform: scale(1.3) rotate(-10deg);
   }
 
   80% {
