@@ -16,6 +16,10 @@
 .ContactPage textarea {
   font-family: inherit;
   padding: 3px 10px;
+  outline: none;
+  border: none;
+  background-color: #dbedf3;
+  border-radius: 6px;
 }
 
 .ContactPage #subject {
@@ -37,4 +41,5 @@
   font-family: inherit;
   background-color: #fff498;
   font-weight: bold;
+  cursor: pointer;
 }
