@@ -18,7 +18,7 @@ let AboutPage = () => {
             <br /> I finished university with a bachelor degree in Communication
             Engineering from Aleppo University. We had some programming subjects
             and I enjoyed them at that time , so decided to shift career and
-            started studying online with help from a professional software
+            started studying online with help from professional software
             engineers throughout mentorship sessions. <br />
             During this time I made some projects with vanilla JavaScript then
             started to use React js. You can check them &nbsp;
