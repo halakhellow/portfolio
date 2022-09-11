@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
+import ShootingStars from "./components/ShootingStars/ShootingStars";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
@@ -15,6 +16,7 @@ function App() {
     <Route
       render={({ location }) => (
         <TransitionGroup component="div" className="App">
+          <ShootingStars />
           <CSSTransition
             key={location.pathname}
             timeout={450}
