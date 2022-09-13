@@ -11,6 +11,10 @@
   width: 5rem;
 }
 
+.Footer a:hover {
+  transition: 0.3s;
+}
+
 .Footer a:first-of-type:hover i {
   color: gray;
 }
