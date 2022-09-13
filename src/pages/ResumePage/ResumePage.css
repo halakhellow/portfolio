@@ -1,25 +1,18 @@
-.ResumePage h2 {
+.ResumePage-header {
   margin-top: 0.5rem;
 }
 
-.download-button {
-  display: block;
-  margin: 1rem auto;
-  padding: 4px;
-  width: fit-content;
-  height: 1.3rem;
-  background-color: #fff498;
-  font-weight: bold;
-  color: black;
+.ResumePage .text {
+  line-height: 25px;
+}
+
+.ResumePage .contact:active,
+.ResumePage .contact:visited,
+.ResumePage .contact:link {
+  color: #fff498;
   text-decoration: none;
 }
 
-.download-button i {
-  margin-right: 10px;
-}
-
-.download-button:hover {
-  background-color: transparent;
-  color: whitesmoke;
-  transition: 0.5s;
+.ResumePage .contact:hover {
+  text-decoration: underline;
 }
