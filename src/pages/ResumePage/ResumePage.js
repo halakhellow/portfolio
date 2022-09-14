@@ -30,7 +30,7 @@ let ResumePage = () => {
           height="540"
           title="Hala Alkhellow Resume"
         ></iframe>
-        <CustomBtn anchorLink text="Download" />
+        <CustomBtn anchorLink text="Download" link={resume} />
       </div>
       <Footer />
     </div>
