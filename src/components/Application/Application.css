@@ -9,23 +9,10 @@
   border-radius: 1rem;
 }
 
-.Application img,
-.Application-description {
+.Application img {
   height: 100%;
   width: 100%;
   border-radius: 1rem;
-}
-
-.Application-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(0 0 0/90%);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .Application h3 {
@@ -34,26 +21,8 @@
 
 .Application:hover {
   box-shadow: 0 0 7px #fff498;
+  cursor: pointer;
   transition: 0.5s;
-}
-
-.Application:hover .Application-description {
-  visibility: visible;
-  opacity: 1;
-}
-
-.Application-link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  text-decoration: none;
-  z-index: 10;
-  /* for IE */
-  background-color: white;
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
@@ -62,9 +31,6 @@
   .Application {
     width: 16rem;
     height: 9rem;
-  }
-  .Application-description {
-    font-size: 0.9rem;
   }
   .Application h3 {
     margin-top: 10%;
