@@ -1,12 +1,16 @@
 import React from "react";
 
-import resume from "../../pages/ResumePage/resume.pdf";
-
 import "./CustomBtn.css";
 
-const CustomBtn = ({ text, type, anchorLink }) => {
+const CustomBtn = ({ text, type, anchorLink, link }) => {
+  const downloadBtn = text === "Download";
   return anchorLink ? (
-    <a className="CustomBtn" href={resume} download>
+    <a
+      className="CustomBtn"
+      href={link}
+      download={downloadBtn && true}
+      target={!downloadBtn && "_blank"}
+    >
       {text}
     </a>
   ) : (
