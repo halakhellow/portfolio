@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ModalContext, AppContext } from "../../App";
 
 import "./Application.css";
 
-let Application = ({ imageSrc, title, description, appLink }) => {
+const Application = ({ title, imageSrc }) => {
+  const [, setModalOpen] = useContext(ModalContext);
+  const [, setAppTitle] = useContext(AppContext);
   return (
-    <div className="Application">
+    <div
+      className="Application"
+      onClick={() => {
+        setModalOpen(true);
+        setAppTitle(title);
+      }}
+    >
       <img src={imageSrc} alt={title} />
-      <div className="Application-description">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <p>
-          <a className="Application-link" href={appLink} target="_blank"></a>
-        </p>
-      </div>
     </div>
   );
 };
