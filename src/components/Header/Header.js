@@ -1,13 +1,15 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
+import logo from "../../images/logo.png";
+
 import "./Header.css";
 
 let Header = ({ home }) => {
   return (
     <div className="Header">
       <Link to="/portfolio">
-        <img src="https://img.icons8.com/ios/50/ffffff/home--v4.png" />
+        <img src={logo} alt="logo" />
       </Link>
       {home ? (
         ""
