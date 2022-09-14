@@ -17,14 +17,15 @@ let HomePage = () => {
             <div className="scroller">
               <div className="inner">
                 <p>Hala Alkhellow</p>
-                <p>FrontEnd Developer</p>
-                <p>React Developer</p>
+                <p>Full Stack Developer</p>
+                <p>MERN Stack Developer</p>
               </div>
             </div>
           </div>
         </h1>
         <p className="HomePage-bio">
-          A Frontend developer, specializing in React development.
+          A Full Stack Developer, specializing in the MERN stack.
+          <br /> MongoDB, ExpressJS, ReactJS and NodeJS
         </p>
         <Sections />
       </div>
