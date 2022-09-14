@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  color: black;
+  color: hsl(240deg 6% 87%);
   text-decoration: none;
 }
 
@@ -15,11 +15,11 @@
 
 .SectionItem-infos {
   position: relative;
-  top: 4.5rem;
+  top: 4.8rem;
 }
 
 .SectionItem-icon {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   text-shadow: 0px 0px 2px #0e3b4a;
 }
 
