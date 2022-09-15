@@ -34,6 +34,13 @@ const Modal = () => {
           </button>
           <div className="modalContent">
             <p> {appDescription} </p>
+            {/* To be deleted */}
+            {appTitle === "TODO LIST" && (
+              <p style={{ color: "hsl(206deg 99% 81%)" }}>
+                Note: This app isn't fully deployed yet but you can check the
+                code below
+              </p>
+            )}
           </div>
           <div className="technologies">
             <p>Technologies used to build this app:</p>
@@ -46,7 +53,7 @@ const Modal = () => {
             </div>
           </div>
           <div className="modalActions">
-            <CustomBtn anchorLink text="Go to website" link={appLink} />
+            <CustomBtn anchorLink text="Visit website" link={appLink} />
           </div>
         </div>
       </div>
