@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 
 import { ModalContext, AppContext } from "../../App";
+import CustomBtn from "../CustomBtn/CustomBtn";
 
 import "./Application.css";
 
@@ -11,11 +12,20 @@ const Application = ({ title, imageSrc }) => {
     <div
       className="Application"
       onClick={() => {
-        setModalOpen(true);
         setAppTitle(title);
       }}
     >
       <img src={imageSrc} alt={title} />
+      <div className="Application-description">
+        <h3>{title}</h3>
+        <CustomBtn
+          text="See details"
+          anchorLink
+          onClick={() => {
+            setModalOpen(true);
+          }}
+        />
+      </div>
     </div>
   );
 };

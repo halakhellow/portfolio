@@ -2,7 +2,7 @@ import React from "react";
 
 import "./CustomBtn.css";
 
-const CustomBtn = ({ text, type, anchorLink, link }) => {
+const CustomBtn = ({ text, type, anchorLink, link, onClick }) => {
   const downloadBtn = text === "Download";
   return anchorLink ? (
     <a
@@ -10,6 +10,7 @@ const CustomBtn = ({ text, type, anchorLink, link }) => {
       href={link}
       download={downloadBtn && true}
       target={!downloadBtn && "_blank"}
+      onClick={!downloadBtn && onClick}
     >
       {text}
     </a>
