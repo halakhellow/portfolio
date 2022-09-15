@@ -70,6 +70,7 @@
 
 .modalActions {
   position: absolute;
+  display: flex;
   bottom: 2px;
   margin-bottom: 10px;
   width: 100%;

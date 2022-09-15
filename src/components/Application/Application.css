@@ -24,6 +24,22 @@
   cursor: pointer;
   transition: 0.5s;
 }
+.Application-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0 0 0/90%);
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 1rem;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.Application:hover .Application-description {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
