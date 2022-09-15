@@ -11,12 +11,12 @@
 
 .centered {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 22%;
+  left: 22%;
   z-index: 7;
-  background-color: hsl(206deg 93% 13%);
+  background: #000c25;
   border-radius: 13px;
-  transform: translate(-50%, -50%);
+  animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .modal {
@@ -40,7 +40,7 @@
   padding: 10px;
   color: black;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -52,8 +52,16 @@
   margin: auto;
 }
 
+.modalContent {
+  line-height: 2rem;
+}
+
 .technologies p {
   margin-bottom: 0;
+}
+
+.technologies .skills {
+  justify-content: center;
 }
 
 .skill {
@@ -93,4 +101,13 @@
 .closeBtn:hover {
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
   transform: translate(-7px, 7px);
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
