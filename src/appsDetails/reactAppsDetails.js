@@ -7,7 +7,8 @@ const reactAppsDetails = [
     imageSrc: hangmanImg,
     description: `Hangman is a guessing game where you try to guess a word by suggesting letters within a certain number of guesses. This app uses local state management.`,
     technologies: ["ReactJS", "CSS"],
-    link: "https://halakhellow.github.io/hangman/",
+    websiteLink: "https://halakhellow.github.io/hangman/",
+    githubLink: "https://github.com/halakhellow/hangman",
   },
   {
     title: "TODO LIST",
@@ -15,8 +16,8 @@ const reactAppsDetails = [
     description:
       "A MERN stack application that helps to maintain our day-to-day tasks and list everything that we have to do. It is helpful in planning our daily schedules and become more aware of how we spend time in the process of doing those tasks and how productive that time is.",
     technologies: ["ReactJS", "CSS", "NodeJS", "ExpressJS", "MongoDB"],
-    //link: "https://halakhellow.github.io/todo-list/",
-    link: "https://github.com/halakhellow/todo-list", // to delete
+    //websiteLink: "https://halakhellow.github.io/todo-list/",
+    githubLink: "https://github.com/halakhellow/todo-list",
   },
   {
     title: "E-COMMERCE",
@@ -33,7 +34,8 @@ const reactAppsDetails = [
       "Stripe",
       "Asynchronous Redux (Redux-saga)",
     ],
-    link: "https://halakhellow.github.io/e-commerce/",
+    websiteLink: "https://halakhellow.github.io/e-commerce/",
+    githubLink: "https://github.com/halakhellow/e-commerce",
   },
 ];
 

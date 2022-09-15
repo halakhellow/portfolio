@@ -13,12 +13,13 @@ const apps = [...reactAppsInfos, ...jsAppsDetails];
 const Modal = () => {
   const [, setModalOpen] = useContext(ModalContext);
   const [appTitle] = useContext(AppContext);
-  let appDescription, appTechnologies, appLink;
+  let appDescription, appTechnologies, appLink, githubLink;
   apps.forEach((app) => {
     if (app.title === appTitle) {
       appDescription = app.description;
       appTechnologies = app.technologies;
-      appLink = app.link;
+      appLink = app.websiteLink;
+      githubLink = app.githubLink;
     }
   });
   return (
@@ -53,7 +54,8 @@ const Modal = () => {
             </div>
           </div>
           <div className="modalActions">
-            <CustomBtn anchorLink text="Visit website" link={appLink} />
+            <CustomBtn anchorLink text="GitHub" link={githubLink} />
+            <CustomBtn anchorLink text="Visit Website" link={appLink} />
           </div>
         </div>
       </div>

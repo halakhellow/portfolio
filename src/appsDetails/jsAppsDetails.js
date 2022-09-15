@@ -9,7 +9,8 @@ const jsAppsDetails = [
     description:
       "App deals with GitHub API to get the information related to a specific GitHub account.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://halakhellow.github.io/GitHub-Users-Infos/",
+    websiteLink: "https://halakhellow.github.io/GitHub-Users-Infos/",
+    githubLink: "https://github.com/halakhellow/github-users-infos",
   },
   {
     title: "MOVIES",
@@ -17,7 +18,8 @@ const jsAppsDetails = [
     description:
       "App deals with fetching data from an API and using url search parameters to set up navigation routes to show different categories of movies with the ability to see the details for each movie in a different page.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    link: "https://halakhellow.github.io/Movies/",
+    websiteLink: "https://halakhellow.github.io/Movies/",
+    githubLink: "https://github.com/halakhellow/movies",
   },
   {
     title: "TIC TAC TOE",
@@ -25,7 +27,8 @@ const jsAppsDetails = [
     description:
       "A puzzle game for two players, called 'X' and 'O', who take turns marking the spaces in a 3×3 grid.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://halakhellow.github.io/Tic-Tac-Toe/",
+    websiteLink: "https://halakhellow.github.io/Tic-Tac-Toe/",
+    githubLink: "https://github.com/halakhellow/tic-tac-toe",
   },
 ];
 
