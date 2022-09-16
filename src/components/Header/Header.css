@@ -28,7 +28,31 @@
 
 .Header .Header-sections a.active {
   color: #fff498;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.Header .Header-sections a:hover:not(.active) {
+  background-image: linear-gradient(
+    70deg,
+    whitesmoke 45%,
+    /* font color */ yellow 50%,
+    whitesmoke 55% /* font color */
+  );
+  background-size: 500% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 1s;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
