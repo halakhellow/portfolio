@@ -1,6 +1,5 @@
 body {
-  height: 100vh;
-  overflow: hidden;
+  height: fit-content;
   display: -webkit-box;
   display: flex;
 }
