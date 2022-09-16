@@ -29,7 +29,7 @@ let AboutPage = () => {
             my work &nbsp;
             <Link to="/portfolio/work">here.</Link>
           </p>
-          <p>
+          <div>
             Technical skills I'm familiar with:
             <div className="skills">
               <p className="skill">HTML</p>
@@ -44,7 +44,7 @@ let AboutPage = () => {
             </div>
             and other skills mentioned in my &nbsp;
             <Link to="/portfolio/resume">Resume.</Link>
-          </p>
+          </div>
 
           <p>
             I'm an astrophil as you can guess <i className="fa fa-star" /> , I
