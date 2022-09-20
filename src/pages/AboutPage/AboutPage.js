@@ -1,9 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { nanoid } from "nanoid";
 
 import Header from "../../components/Header/Header";
+import FlippingCard from "../../components/FlippingCard/FlippingCard";
+import Footer from "../../components/Footer/Footer";
 
 import "./AboutPage.css";
+
+const skills = [
+  { skill: "JavaScript", icon: "logos:javascript" },
+  { skill: "ReactJS", icon: "logos:react" },
+  { skill: "Redux", icon: "fontisto:redux" },
+  { skill: "NodeJS", icon: "logos:nodejs-icon" },
+  { skill: "ExpressJs", icon: "Express" },
+  { skill: "MongoDB", icon: "logos:mongodb-icon" },
+];
 
 let AboutPage = () => {
   return (
@@ -27,23 +39,29 @@ let AboutPage = () => {
             During this time I made some projects with vanilla JavaScript then
             started to code with ReactJS as well as to build APIs. You can check
             my work &nbsp;
-            <Link to="/portfolio/work">here.</Link>
+            <Link className="link-in-text" to="/portfolio/work">
+              here
+            </Link>
+            &nbsp;.
           </p>
           <div>
             Technical skills I'm familiar with:
             <div className="skills">
-              <p className="skill">HTML</p>
-              <p className="skill">CSS</p>
-              <p className="skill">SASS</p>
-              <p className="skill">Bootstrap</p>
-              <p className="skill">JavaScript</p>
-              <p className="skill">ReactJS</p>
-              <p className="skill">NodeJS</p>
-              <p className="skill">ExpressJS</p>
-              <p className="skill">MongoDB</p>
+              {skills.map((technology) => {
+                return (
+                  <FlippingCard
+                    key={nanoid()}
+                    skill={technology.skill}
+                    icon={technology.icon}
+                  />
+                );
+              })}
             </div>
             and other skills mentioned in my &nbsp;
-            <Link to="/portfolio/resume">Resume.</Link>
+            <Link className="link-in-text" to="/portfolio/resume">
+              Resume
+            </Link>
+            &nbsp;.
           </div>
 
           <p>
@@ -51,21 +69,15 @@ let AboutPage = () => {
             enjoy music, watching football, and learning languages.
           </p>
           <p>
-            Want to connect? <Link to="/portfolio/contact">Let's go!</Link>
+            Want to connect?{" "}
+            <Link className="link-in-text" to="/portfolio/contact">
+              Let's go
+            </Link>
+            &nbsp;!
           </p>
-          <div className="social-media-links">
-            <a href="https://github.com/halakhellow" target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://codepen.io/halakhellow" target="_blank">
-              <i className="fab fa-codepen"></i>
-            </a>
-            <a href="https://linkedin.com/in/halakhellow" target="_blank">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
