@@ -203,8 +203,8 @@ body {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(calc(100vh - 20px));
+    transform: translateX(calc(100vh - 20px));
   }
 }
 
@@ -215,7 +215,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(calc(100vh - 20px));
+    transform: translateX(calc(100vh - 20px));
   }
 }

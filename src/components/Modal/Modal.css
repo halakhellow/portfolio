@@ -1,11 +1,10 @@
 .darkBG {
   background-color: rgba(0, 0, 0, 70%);
-  width: 120vw;
-  height: 120vh;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 6;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -83,25 +82,32 @@
 }
 
 .closeBtn {
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-  font-size: 17px;
-  color: black;
-  background: #f1efe3;
-  transition: all 0.25s ease;
-  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 19%);
   position: absolute;
-  right: 0;
-  top: 0;
-  align-self: flex-end;
-  margin-top: -7px;
-  margin-right: -7px;
+  right: -1rem;
+  top: -1rem;
+  z-index: 10;
+  background-color: #f1efe3;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
 }
-
-.closeBtn:hover {
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
-  transform: translate(-7px, 7px);
+.closeBtn:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: fontAwesome;
+  content: "";
+  color: #000;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+}
+.closeBtn:hover:before {
+  color: hsl(11deg 100% 34%);
+  transition: background 350ms cubic-bezier(0.42, 0, 0.58, 1) 10ms,
+    all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transform: translate(-50%, -48%) rotate(-0.25turn);
+  /*Had to bump it b/c the dimensions are not square*/
 }
 
 @keyframes blowUpModal {
@@ -110,5 +116,18 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media only Screen and (min-width: 450px) and (max-width: 1600px) {
+  .centered {
+    top: 17.5vh;
+    left: 20vw;
+  }
+  .modal {
+    width: 60vw;
+    height: 65vh;
   }
 }

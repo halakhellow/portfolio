@@ -21,7 +21,6 @@
 
 .Application:hover {
   box-shadow: 0 0 7px #fff498;
-  cursor: pointer;
   transition: 0.5s;
 }
 .Application-description {

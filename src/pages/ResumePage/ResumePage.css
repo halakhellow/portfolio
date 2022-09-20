@@ -6,13 +6,13 @@
   line-height: 25px;
 }
 
-.ResumePage .contact:active,
-.ResumePage .contact:visited,
-.ResumePage .contact:link {
+.link-in-text:active,
+.link-in-text:visited,
+.link-in-text:link {
   color: #fff498;
   text-decoration: none;
 }
 
-.ResumePage .contact:hover {
+.link-in-text:hover {
   text-decoration: underline;
 }
