@@ -10,6 +10,8 @@ import { ModalContext } from "../../App";
 import reactAppsInfos from "../../appsDetails/reactAppsDetails";
 import jsAppsDetails from "../../appsDetails/jsAppsDetails";
 
+import cookiezAPI from "../../images/cookiezAPI.png";
+
 import "./PortfolioPage.css";
 
 let PortfolioPage = () => {
@@ -20,6 +22,9 @@ let PortfolioPage = () => {
         <Header />
         {modalOpen && <Modal />}
         <div className="PortfolioPage-content">
+          {" "}
+          <h3>APIs</h3>
+          <Application title="COOKIEZ API" imageSrc={cookiezAPI} />
           <h3>Applications with React.js</h3>
           {reactAppsInfos.map((app) => (
             <Application

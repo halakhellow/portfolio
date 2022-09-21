@@ -3,12 +3,13 @@ import { nanoid } from "nanoid";
 
 import { ModalContext, AppContext } from "../../App";
 import CustomBtn from "../CustomBtn/CustomBtn";
+import apiInfos from "../../appsDetails/apiDetails";
 import reactAppsInfos from "../../appsDetails/reactAppsDetails";
 import jsAppsDetails from "../../appsDetails/jsAppsDetails";
 
 import "./Modal.css";
 
-const apps = [...reactAppsInfos, ...jsAppsDetails];
+const apps = [...apiInfos, ...reactAppsInfos, ...jsAppsDetails];
 
 const Modal = () => {
   const [, setModalOpen] = useContext(ModalContext);
@@ -31,13 +32,13 @@ const Modal = () => {
             <h5 className="heading">{appTitle}</h5>
           </div>
           <button className="closeBtn" onClick={() => setModalOpen(false)}>
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
           </button>
           <div className="modalContent">
             <p> {appDescription} </p>
             {/* To be deleted */}
             {appTitle === "TODO LIST" && (
-              <p style={{ color: "hsl(206deg 99% 81%)" }}>
+              <p style={{ color: "hsl(206deg 99% 81%)", fontSize: "14px" }}>
                 Note: This app isn't fully deployed yet but you can check the
                 code below
               </p>
@@ -55,7 +56,13 @@ const Modal = () => {
           </div>
           <div className="modalActions">
             <CustomBtn anchorLink text="GitHub" link={githubLink} />
-            <CustomBtn anchorLink text="Visit Website" link={appLink} />
+            <CustomBtn
+              anchorLink
+              text={
+                appTitle === "COOKIEZ API" ? "Documentation" : "Visit Website"
+              }
+              link={appLink}
+            />
           </div>
         </div>
       </div>
