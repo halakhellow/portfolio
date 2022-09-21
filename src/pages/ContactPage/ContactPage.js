@@ -1,14 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import "animate.css/animate.min.css";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import CustomBtn from "../../components/CustomBtn/CustomBtn";
 
 import "./ContactPage.css";
+
+const bounce = cssTransition({
+  enter: "animate__animated animate__bounceIn",
+  exit: "animate__animated animate__bounceOut",
+});
 
 const ContactPage = () => {
   const {
@@ -19,16 +25,11 @@ const ContactPage = () => {
   } = useForm();
 
   // Function that displays a success toast on bottom right of the page when form submission is successful
-  const toastifySuccess = () => {
-    toast("SUCCESS!", {
+  const animateCss = () => {
+    toast(`Thank you for connecting${"\xa0".repeat(2)}:)`, {
+      transition: bounce,
       position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
       pauseOnHover: true,
-      draggable: false,
-      className: "successMessage",
-      toastId: "notifyToast",
     });
   };
 
@@ -50,7 +51,7 @@ const ContactPage = () => {
       );
 
       reset();
-      toastifySuccess();
+      animateCss();
     } catch (e) {
       console.log(e);
     }
