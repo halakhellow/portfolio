@@ -68,11 +68,11 @@ textarea:focus {
   margin-bottom: 1rem;
 }
 
-.successMessage {
-  color: #000;
-  border-radius: 6px;
-  width: 180px;
-  text-indent: 11px;
-  margin-left: 75px;
-  background-color: #fff498;
+.Toastify__toast-theme--light {
+  background-color: whitesmoke;
+  color: black;
+  font-family: inherit;
+}
+.Toastify__progress-bar {
+  background: #11a683;
 }
