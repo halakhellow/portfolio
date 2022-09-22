@@ -1,4 +1,4 @@
-.SectionItem {
+.section-item {
   width: 12rem;
   height: 12rem;
   background-image: url("../../images/star.png");
@@ -9,20 +9,20 @@
   text-decoration: none;
 }
 
-.SectionItem:hover {
+.section-item:hover {
   animation: tada 2.1s;
 }
 
-.SectionItem-infos {
+.section-item-infos {
   position: relative;
   top: 4.8rem;
 }
 
-.SectionItem-icon {
+.section-item-icon {
   font-size: 1.5rem;
   text-shadow: 0px 0px 2px #0e3b4a;
 }
 
-.SectionItem-name {
+.section-item-name {
   margin-top: 4px;
 }

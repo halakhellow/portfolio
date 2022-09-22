@@ -1,4 +1,4 @@
-.CustomBtn {
+.custom-button {
   position: relative;
   border: none;
   background-color: transparent;
@@ -12,7 +12,7 @@
   margin: 1em auto;
 }
 
-a.CustomBtn {
+a.custom-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,8 +22,8 @@ a.CustomBtn {
   width: 10rem;
 }
 
-.CustomBtn::after,
-.CustomBtn::before {
+.custom-button::after,
+.custom-button::before {
   content: "";
   display: block;
   position: absolute;
@@ -34,7 +34,7 @@ a.CustomBtn {
   border-radius: 2px;
 }
 
-.CustomBtn::after {
+.custom-button::after {
   bottom: 0;
   right: 0;
   border-top-color: transparent;
@@ -43,7 +43,7 @@ a.CustomBtn {
   border-right-color: #fff498;
 }
 
-.CustomBtn::before {
+.custom-button::before {
   top: 0;
   left: 0;
   border-bottom-color: transparent;
@@ -52,8 +52,8 @@ a.CustomBtn {
   border-left-color: #fff498;
 }
 
-.CustomBtn:hover::after,
-.CustomBtn:hover::before {
+.custom-button:hover::after,
+.custom-button:hover::before {
   border-bottom-color: #fff498;
   border-right-color: #fff498;
   border-top-color: #fff498;

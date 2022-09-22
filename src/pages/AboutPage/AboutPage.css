@@ -1,8 +1,8 @@
-.AboutPage h3 {
+.about-page h3 {
   margin-top: 0;
 }
 
-.AboutPage-info {
+.about-page-info {
   width: 55%;
   padding: 0.5rem 1rem;
   margin: auto;
@@ -34,10 +34,10 @@
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
 @media only Screen and (min-width: 250px) and (max-width: 700px) {
-  .Header-sections a {
+  .header-sections a {
     font-size: 0.7rem;
   }
-  .AboutPage-info {
+  .about-page-info {
     width: 95%;
   }
 }

@@ -1,4 +1,4 @@
-.ContactPage form {
+.contact-page form {
   display: flex;
   flex-direction: column;
   width: 25rem;
@@ -9,13 +9,13 @@
   border-radius: 6px;
 }
 
-.ContactPage label {
+.contact-page label {
   font-size: 1rem;
   margin: 1rem 0 0.5rem 0.6rem;
 }
 
-.ContactPage input,
-.ContactPage textarea {
+.contact-page input,
+.contact-page textarea {
   font-family: inherit;
   padding: 3px 10px;
   outline: none;
@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-.ContactPage input {
+.contact-page input {
   width: 22.5rem;
   height: 1.7rem;
   font-size: 0.9rem;
@@ -43,12 +43,12 @@
   text-indent: 40px;
 }
 
-.ContactPage input:focus,
+.contact-page input:focus,
 textarea:focus {
   box-shadow: 0px 0px 2px 1px #fff498;
 }
 
-.ContactPage textarea {
+.contact-page textarea {
   height: 10rem;
   box-sizing: border-box;
   width: 24rem;
@@ -58,13 +58,13 @@ textarea:focus {
   resize: none;
 }
 
-.errorMessage {
+.error-message {
   color: #11a683;
   font-size: 0.8rem;
   margin: -8px 0 0 1rem;
 }
 
-.errorMessage:last-of-type {
+.error-message:last-of-type {
   margin-bottom: 1rem;
 }
 

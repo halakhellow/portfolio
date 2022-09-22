@@ -1,4 +1,4 @@
-.HomePage-title {
+.home-page-title {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -6,30 +6,30 @@
   color: #fbfcfe;
 }
 
-.HomePage-title div {
+.home-page-title div {
   text-transform: uppercase;
 }
 
-.HomePage-title .iamSection {
+.home-page-title .iam-section {
   text-align: right;
   float: left;
 }
-.HomePage-title .slideSection {
+.home-page-title .slide-section {
   text-align: left;
   overflow: hidden;
   display: block;
   white-space: nowrap;
 }
-.HomePage-title .slideSection p {
+.home-page-title .slide-section p {
   margin: 0px !important;
 }
 
-.HomePage-title .scroller {
+.home-page-title .scroller {
   height: 50px;
   line-height: 50px;
   overflow: hidden;
 }
-.HomePage-title .scroller .inner {
+.home-page-title .scroller .inner {
   animation: 13s normal infinite running scroll;
 }
 @keyframes scroll {
@@ -59,7 +59,7 @@
   }
 }
 
-.HomePage-bio {
+.home-page-bio {
   width: 40%;
   margin: 2rem auto;
   padding: 1rem 0;
@@ -69,64 +69,64 @@
   background-color: rgb(5 5 14 / 30%);
 }
 
-.HomePage .Sections {
+.home-page .sections {
   display: flex;
   justify-content: center;
   gap: -5px;
   margin-top: 4rem;
 }
 
-.HomePage .Sections .SectionItem:not(:first-child) {
+.home-page .sections .section-item:not(:first-child) {
   margin-left: -2rem;
 }
 
-.HomePage .Sections .SectionItem:nth-of-type(2),
-.HomePage .Sections .SectionItem:nth-of-type(4) {
+.home-page .sections .section-item:nth-of-type(2),
+.home-page .sections .section-item:nth-of-type(4) {
   margin-top: -3rem;
 }
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
 @media only Screen and (min-width: 250px) and (max-width: 489px) {
-  .HomePage-title {
+  .home-page-title {
     font-size: 1.5rem;
   }
-  .HomePage-bio {
+  .home-page-bio {
     font-size: 1.1rem;
   }
 
-  .HomePage .Sections {
+  .home-page .sections {
     display: flex;
     flex-direction: column;
     margin-top: 7px;
   }
 
-  .SectionItem {
+  .section-item {
     width: 10rem;
     height: 10rem;
     display: block;
     margin: 0 auto !important;
   }
 
-  .SectionItem-infos {
+  .section-item-infos {
     top: 3.5rem;
     font-size: 1rem;
   }
 
-  .SectionItem-infos p {
+  .section-item-infos p {
     font-size: 0.9rem;
   }
 }
 
 @media only Screen and (min-width: 250px) and (max-width: 670px) {
-  .HomePage-title {
+  .home-page-title {
     flex-direction: column;
   }
-  .HomePage-title .iamSection,
-  .HomePage-title .slideSection {
+  .home-page-title .iam-section,
+  .home-page-title .slide-section {
     text-align: center;
   }
-  .HomePage-bio {
+  .home-page-bio {
     width: 90%;
   }
 }

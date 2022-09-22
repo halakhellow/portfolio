@@ -1,4 +1,4 @@
-.Application {
+.application {
   position: relative;
   display: inline-block;
   width: 22rem;
@@ -9,21 +9,21 @@
   border-radius: 1rem;
 }
 
-.Application img {
+.application img {
   height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
 
-.Application h3 {
+.application h3 {
   margin-top: 20%;
 }
 
-.Application:hover {
+.application:hover {
   box-shadow: 0 0 7px #fff498;
   transition: 0.5s;
 }
-.Application-description {
+.application-description {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -35,7 +35,7 @@
   border-radius: 1rem;
   transition: opacity 0.5s, visibility 0.5s;
 }
-.Application:hover .Application-description {
+.application:hover .application-description {
   visibility: visible;
   opacity: 1;
 }
@@ -43,11 +43,11 @@
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
 @media only Screen and (min-width: 250px) and (max-width: 450px) {
-  .Application {
+  .application {
     width: 16rem;
     height: 9rem;
   }
-  .Application h3 {
+  .application h3 {
     margin-top: 10%;
   }
 }
