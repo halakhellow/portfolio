@@ -19,11 +19,11 @@ const skills = [
 
 let AboutPage = () => {
   return (
-    <div className="AboutPage page">
+    <div className="about-page page">
       <div className="page-content">
         <Header />
         <h3>ABOUT ME</h3>
-        <div className="AboutPage-info">
+        <div className="about-page-info">
           <p>
             Hey there :) <br /> I'm Hala Alkhellow, a Full Stack Developer.
             <br /> I finished university with a bachelor degree in Communication

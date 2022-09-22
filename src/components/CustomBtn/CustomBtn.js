@@ -6,7 +6,7 @@ const CustomBtn = ({ text, type, anchorLink, link, onClick }) => {
   const downloadBtn = text === "Download";
   return anchorLink ? (
     <a
-      className="CustomBtn"
+      className="custom-button"
       href={link}
       download={downloadBtn && true}
       target={!downloadBtn && "_blank"}
@@ -15,7 +15,7 @@ const CustomBtn = ({ text, type, anchorLink, link, onClick }) => {
       {text}
     </a>
   ) : (
-    <button className="CustomBtn" type={type}>
+    <button className="custom-button" type={type}>
       {text}
     </button>
   );

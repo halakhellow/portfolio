@@ -10,13 +10,13 @@ import "./ResumePage.css";
 
 let ResumePage = () => {
   return (
-    <div className="ResumePage page">
+    <div className="resume-page page">
       <div className="page-content">
         <Header />
-        <h2 className="ResumePage-header">Resume :</h2>
+        <h2 className="resume-page-header">Resume :</h2>
         <p className="text">
           Reach out to me via my{" "}
-          <a className="contact" href="/portfolio/contact">
+          <a className="link-in-text" href="/portfolio/contact">
             contact
           </a>
           &nbsp; page .

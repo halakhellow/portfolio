@@ -7,14 +7,14 @@ import "./Header.css";
 
 let Header = ({ home }) => {
   return (
-    <div className="Header">
+    <div className="header">
       <Link to="/portfolio">
         <img src={logo} alt="logo" />
       </Link>
       {home ? (
         ""
       ) : (
-        <div className="Header-sections">
+        <div className="header-sections">
           <NavLink to="/portfolio/about" activeClassName="active">
             About
           </NavLink>

@@ -10,13 +10,13 @@ const Application = ({ title, imageSrc }) => {
   const [, setAppTitle] = useContext(AppContext);
   return (
     <div
-      className="Application"
+      className="application"
       onClick={() => {
         setAppTitle(title);
       }}
     >
       <img src={imageSrc} alt={title} />
-      <div className="Application-description">
+      <div className="application-description">
         <h3>{title}</h3>
         <CustomBtn
           text="See details"

@@ -58,7 +58,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="ContactPage page">
+    <div className="contact-page page">
       <div className="page-content">
         <Header />
         <h1>Let's Connect !</h1>
@@ -81,7 +81,7 @@ const ContactPage = () => {
             />
           </div>
           {errors.name && (
-            <span className="errorMessage">{errors.name.message}</span>
+            <span className="error-message">{errors.name.message}</span>
           )}
           <label htmlFor="email"> Email :</label>
           <div class="input-icons">
@@ -98,7 +98,7 @@ const ContactPage = () => {
             />
           </div>
           {errors.email && (
-            <span className="errorMessage">
+            <span className="error-message">
               Please enter a valid email address
             </span>
           )}
@@ -111,7 +111,7 @@ const ContactPage = () => {
             })}
           ></textarea>
           {errors.message && (
-            <span className="errorMessage">Please enter a message</span>
+            <span className="error-message">Please enter a message</span>
           )}
           <CustomBtn text="SEND" type="submit" />
         </form>

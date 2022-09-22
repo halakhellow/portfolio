@@ -4,7 +4,7 @@ import "./Footer.css";
 
 let Footer = () => {
   return (
-    <div className="Footer">
+    <div className="footer">
       <a href="https://github.com/halakhellow" target="_blank">
         <i className="fab fa-github"></i>
       </a>{" "}

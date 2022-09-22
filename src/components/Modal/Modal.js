@@ -25,16 +25,16 @@ const Modal = () => {
   });
   return (
     <>
-      <div className="darkBG" onClick={() => setModalOpen(false)} />
+      <div className="dark-bg" onClick={() => setModalOpen(false)} />
       <div className="centered">
         <div className="modal">
-          <div className="modalHeader">
+          <div className="modal-header">
             <h5 className="heading">{appTitle}</h5>
           </div>
-          <button className="closeBtn" onClick={() => setModalOpen(false)}>
+          <button className="close-btn" onClick={() => setModalOpen(false)}>
             <i aria-hidden="true"></i>
           </button>
-          <div className="modalContent">
+          <div className="modal-content">
             <p> {appDescription} </p>
             {/* To be deleted */}
             {appTitle === "TODO LIST" && (
@@ -54,7 +54,7 @@ const Modal = () => {
               ))}{" "}
             </div>
           </div>
-          <div className="modalActions">
+          <div className="modal-actions">
             <CustomBtn anchorLink text="GitHub" link={githubLink} />
             <CustomBtn
               anchorLink

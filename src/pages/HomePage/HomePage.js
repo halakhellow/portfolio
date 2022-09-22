@@ -8,12 +8,12 @@ import "./HomePage.css";
 
 let HomePage = () => {
   return (
-    <div className="HomePage page">
+    <div className="home-page page">
       <div className="page-content">
         <Header home />
-        <h1 className="HomePage-title">
-          <div className="iamSection">Hi, I'm &nbsp;</div>
-          <div className="slideSection">
+        <h1 className="home-page-title">
+          <div className="iam-section">Hi, I'm &nbsp;</div>
+          <div className="slide-section">
             <div className="scroller">
               <div className="inner">
                 <p>Hala Alkhellow</p>
@@ -23,7 +23,7 @@ let HomePage = () => {
             </div>
           </div>
         </h1>
-        <p className="HomePage-bio">
+        <p className="home-page-bio">
           A Full Stack Developer, specializing in the MERN stack.
           <br /> MongoDB, ExpressJS, ReactJS and NodeJS
         </p>

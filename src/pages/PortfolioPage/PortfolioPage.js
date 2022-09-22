@@ -17,11 +17,11 @@ import "./PortfolioPage.css";
 let PortfolioPage = () => {
   const [modalOpen] = useContext(ModalContext);
   return (
-    <div className="PortfolioPage page">
+    <div className="portfolio-page page">
       <div className="page-content">
         <Header />
         {modalOpen && <Modal />}
-        <div className="PortfolioPage-content">
+        <div className="portfolio-page-content">
           {" "}
           <h3>APIs</h3>
           <Application title="COOKIEZ API" imageSrc={cookiezAPI} />
