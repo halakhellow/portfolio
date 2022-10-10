@@ -43,17 +43,18 @@ const Modal = () => {
                 code below
               </p>
             )}
-          </div>
-          <div className="technologies">
-            <p>Technologies used to build this app:</p>
-            <div className="skills">
-              {appTechnologies.map((tech) => (
-                <p className="skill" key={nanoid()}>
-                  {tech}{" "}
-                </p>
-              ))}{" "}
+            <div className="technologies">
+              <p>Technologies used to build this app:</p>
+              <div className="skills">
+                {appTechnologies.map((tech) => (
+                  <p className="skill" key={nanoid()}>
+                    {tech}{" "}
+                  </p>
+                ))}{" "}
+              </div>
             </div>
           </div>
+
           <div className="modal-actions">
             <CustomBtn anchorLink text="GitHub" link={githubLink} />
             <CustomBtn
