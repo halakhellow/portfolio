@@ -15,18 +15,33 @@ let Header = ({ home }) => {
         ""
       ) : (
         <div className="header-sections">
-          <NavLink to="/portfolio/about" activeClassName="active">
-            About
-          </NavLink>
-          <NavLink to="/portfolio/work" activeClassName="active">
-            Portfolio
-          </NavLink>
-          <NavLink to="/portfolio/resume" activeClassName="active">
-            Resume
-          </NavLink>
-          <NavLink to="/portfolio/contact" activeClassName="active">
-            Contact
-          </NavLink>
+          <input id="menu-toggle" type="checkbox" />
+          <label className="menu-button-container" htmlFor="menu-toggle">
+            <div className="menu-button"></div>
+          </label>
+          <div className="dark-bg"></div>
+          <ul className="menu">
+            <li>
+              <NavLink to="/portfolio/about" activeClassName="active">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio/work" activeClassName="active">
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio/resume" activeClassName="active">
+                Resume
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio/contact" activeClassName="active">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
         </div>
       )}
     </div>
