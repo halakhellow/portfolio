@@ -16,3 +16,9 @@
 .link-in-text:hover {
   text-decoration: underline;
 }
+
+@media only Screen and (min-width: 250px) and (max-width: 670px) {
+  iframe {
+    width: auto;
+  }
+}

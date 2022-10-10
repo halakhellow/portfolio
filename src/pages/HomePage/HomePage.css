@@ -87,12 +87,14 @@
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
-@media only Screen and (min-width: 250px) and (max-width: 489px) {
+@media only Screen and (min-width: 250px) and (max-width: 670px) {
   .home-page-title {
     font-size: 1.5rem;
+    flex-direction: column;
   }
   .home-page-bio {
     font-size: 1.1rem;
+    width: 90%;
   }
 
   .home-page .sections {
@@ -116,17 +118,14 @@
   .section-item-infos p {
     font-size: 0.9rem;
   }
-}
-
-@media only Screen and (min-width: 250px) and (max-width: 670px) {
-  .home-page-title {
-    flex-direction: column;
-  }
   .home-page-title .iam-section,
   .home-page-title .slide-section {
     text-align: center;
   }
+}
+
+@media only Screen and (min-width: 670px) and (max-width: 1300px) {
   .home-page-bio {
-    width: 90%;
+    width: 80%;
   }
 }

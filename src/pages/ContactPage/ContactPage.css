@@ -76,3 +76,15 @@ textarea:focus {
 .Toastify__progress-bar {
   background: #11a683;
 }
+
+@media only Screen and (min-width: 250px) and (max-width: 670px) {
+  .contact-page form {
+    width: 23rem;
+  }
+  .contact-page input {
+    width: 20.5rem;
+  }
+  .contact-page textarea {
+    width: 22rem;
+  }
+}

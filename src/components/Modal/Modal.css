@@ -2,8 +2,8 @@
   background-color: rgba(0, 0, 0, 70%);
   top: 0px;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
   z-index: 6;
   position: absolute;
 }
@@ -123,5 +123,16 @@
   .modal {
     width: 60vw;
     height: 65vh;
+  }
+}
+
+@media only Screen and (min-width: 250px) and (max-width: 450px) {
+  .centered {
+    top: 5vh;
+    left: 5vw;
+  }
+  .modal {
+    width: 90vw;
+    height: 90vh;
   }
 }
