@@ -2,9 +2,9 @@
   background-color: rgba(0, 0, 0, 70%);
   top: 0px;
   left: 0;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-  z-index: 6;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
   position: absolute;
 }
 
@@ -12,7 +12,7 @@
   position: fixed;
   top: 25vh;
   left: 25vw;
-  z-index: 7;
+  z-index: 12;
   background: #000c25;
   border-radius: 13px;
   animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
@@ -43,16 +43,14 @@
   text-align: center;
 }
 
-.modal-content,
-.technologies {
+.modal-content {
+  line-height: 2rem;
   padding: 10px;
   font-size: 1.3rem;
   width: 79%;
+  height: 80%;
   margin: auto;
-}
-
-.modal-content {
-  line-height: 2rem;
+  overflow: auto;
 }
 
 .technologies p {
@@ -115,7 +113,7 @@
 
 /* MEDIA QUERY FOR RESPONSIVE DESIGN */
 
-@media only Screen and (min-width: 450px) and (max-width: 1600px) {
+@media only Screen and (min-width: 1100px) and (max-width: 1600px) {
   .centered {
     top: 17.5vh;
     left: 20vw;
@@ -126,7 +124,7 @@
   }
 }
 
-@media only Screen and (min-width: 250px) and (max-width: 450px) {
+@media only Screen and (min-width: 250px) and (max-width: 1100px) {
   .centered {
     top: 5vh;
     left: 5vw;

@@ -154,6 +154,7 @@
   }
   #menu-toggle:checked ~ .dark-bg {
     display: block;
+    z-index: 9;
   }
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #333;
