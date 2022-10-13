@@ -12,6 +12,7 @@ const skills = [
   { skill: "JavaScript", icon: "logos:javascript" },
   { skill: "ReactJS", icon: "logos:react" },
   { skill: "Redux", icon: "fontisto:redux" },
+  { skill: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
   { skill: "NodeJS", icon: "logos:nodejs-icon" },
   { skill: "ExpressJs", icon: "Express" },
   { skill: "MongoDB", icon: "logos:mongodb-icon" },
