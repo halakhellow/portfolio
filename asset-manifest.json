@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a8e60e0e.chunk.css",
-    "main.js": "/portfolio/static/js/main.8828aac5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8828aac5.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.dd2dbf78.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.dd2dbf78.js.map",
+    "main.js": "/portfolio/static/js/main.563bc533.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.563bc533.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b1d49ddb.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b1d49ddb.js.map",
     "static/css/2.f3bd07db.chunk.css": "/portfolio/static/css/2.f3bd07db.chunk.css",
-    "static/js/2.35fe733a.chunk.js": "/portfolio/static/js/2.35fe733a.chunk.js",
-    "static/js/2.35fe733a.chunk.js.map": "/portfolio/static/js/2.35fe733a.chunk.js.map",
-    "static/js/3.012063a4.chunk.js": "/portfolio/static/js/3.012063a4.chunk.js",
-    "static/js/3.012063a4.chunk.js.map": "/portfolio/static/js/3.012063a4.chunk.js.map",
+    "static/js/2.b6033ae2.chunk.js": "/portfolio/static/js/2.b6033ae2.chunk.js",
+    "static/js/2.b6033ae2.chunk.js.map": "/portfolio/static/js/2.b6033ae2.chunk.js.map",
+    "static/js/3.dcb2417b.chunk.js": "/portfolio/static/js/3.dcb2417b.chunk.js",
+    "static/js/3.dcb2417b.chunk.js.map": "/portfolio/static/js/3.dcb2417b.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.f3bd07db.chunk.css.map": "/portfolio/static/css/2.f3bd07db.chunk.css.map",
     "static/css/main.a8e60e0e.chunk.css.map": "/portfolio/static/css/main.a8e60e0e.chunk.css.map",
-    "static/js/2.35fe733a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.35fe733a.chunk.js.LICENSE.txt",
+    "static/js/2.b6033ae2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b6033ae2.chunk.js.LICENSE.txt",
     "static/media/cookiezAPI.7b555af0.png": "/portfolio/static/media/cookiezAPI.7b555af0.png",
     "static/media/ecommerceApp.b14bb073.png": "/portfolio/static/media/ecommerceApp.b14bb073.png",
     "static/media/index.css": "/portfolio/static/media/galaxy.9e387c85.png",
@@ -27,10 +27,10 @@
     "static/media/xoApp.6ed89417.png": "/portfolio/static/media/xoApp.6ed89417.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd2dbf78.js",
+    "static/js/runtime-main.b1d49ddb.js",
     "static/css/2.f3bd07db.chunk.css",
-    "static/js/2.35fe733a.chunk.js",
+    "static/js/2.b6033ae2.chunk.js",
     "static/css/main.a8e60e0e.chunk.css",
-    "static/js/main.8828aac5.chunk.js"
+    "static/js/main.563bc533.chunk.js"
   ]
 }
