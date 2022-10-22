@@ -6,7 +6,7 @@ const reactAppsDetails = [
     title: "HANGMAN",
     imageSrc: hangmanImg,
     description: `Hangman is a guessing game where you try to guess a word by suggesting letters within a certain number of guesses.`,
-    technologies: ["ReactJS", "TailwindCSS", "WordsAPI"],
+    technologies: ["ReactJS", "TailwindCSS"],
     websiteLink: "https://halakhellow.github.io/hangman/",
     githubLink: "https://github.com/halakhellow/hangman",
   },
