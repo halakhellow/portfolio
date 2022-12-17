@@ -6,6 +6,8 @@ import Header from "../../components/Header/Header";
 import FlippingCard from "../../components/FlippingCard/FlippingCard";
 import Footer from "../../components/Footer/Footer";
 
+import resume from "./resume.pdf";
+
 import "./AboutPage.css";
 
 const skills = [
@@ -59,9 +61,9 @@ let AboutPage = () => {
               })}
             </div>
             and other skills mentioned in my &nbsp;
-            <Link className="link-in-text" to="/portfolio/resume">
+            <a className="link-in-text" href={resume} download>
               Resume
-            </Link>
+            </a>
             &nbsp;.
           </div>
 
