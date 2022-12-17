@@ -19,6 +19,17 @@
   flex-wrap: wrap;
 }
 
+.link-in-text:active,
+.link-in-text:visited,
+.link-in-text:link {
+  color: #fff498;
+  text-decoration: none;
+}
+
+.link-in-text:hover {
+  text-decoration: underline;
+}
+
 .skill {
   padding: 0.5rem;
   margin-right: 1rem;
