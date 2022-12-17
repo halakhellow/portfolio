@@ -6,7 +6,7 @@ import ShootingStars from "./components/ShootingStars/ShootingStars";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
-import ResumePage from "./pages/ResumePage/ResumePage";
+import BlogPage from "./pages/BlogPage/BlogPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
 import "./App.css";
@@ -33,7 +33,7 @@ function App() {
                   <Route exact path="/portfolio" component={HomePage} />
                   <Route path="/portfolio/about" component={AboutPage} />
                   <Route path="/portfolio/work" component={PortfolioPage} />
-                  <Route path="/portfolio/resume" component={ResumePage} />
+                  <Route path="/portfolio/blog" component={BlogPage} />
                   <Route path="/portfolio/contact" component={ContactPage} />
                 </Switch>
               </CSSTransition>

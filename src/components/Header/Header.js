@@ -32,8 +32,8 @@ let Header = ({ home }) => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio/resume" activeClassName="active">
-                Resume
+              <NavLink to="/portfolio/blog" activeClassName="active">
+                Blog
               </NavLink>
             </li>
             <li>
