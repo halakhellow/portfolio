@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 
 import "./Footer.css";
@@ -7,6 +8,9 @@ let Footer = () => {
     <div className="footer">
       <a href="https://github.com/halakhellow" target="_blank">
         <i className="fab fa-github"></i>
+      </a>{" "}
+      <a href="https://twitter.com/halakhellow" target="_blank">
+        <i className="fab fa-twitter"></i>
       </a>{" "}
       <a href="https://codepen.io/halakhellow" target="_blank">
         <i className="fab fa-codepen"></i>
