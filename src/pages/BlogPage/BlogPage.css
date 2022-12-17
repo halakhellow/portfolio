@@ -1,0 +1,15 @@
+.blogs-page-header {
+  margin-top: 0.5rem;
+}
+
+.blogs-page h3 {
+  margin-bottom: 3rem;
+}
+
+.blogs-page h3 span {
+  color: #fff498;
+}
+
+.blogs-page .text {
+  line-height: 25px;
+}
