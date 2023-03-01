@@ -13,3 +13,9 @@
 .blogs-page .text {
   line-height: 25px;
 }
+
+.blogs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
