@@ -19,3 +19,12 @@
   justify-content: center;
   gap: 2rem;
 }
+
+@media only Screen and (min-width: 250px) and (max-width: 780px) {
+  .blogs {
+    display: block;
+  }
+  .blogs .blog-card {
+    margin: 1rem auto;
+  }
+}
