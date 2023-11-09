@@ -12,7 +12,7 @@ let BlogCard = ({ imgSrc, time, title, date, description, link }) => {
       <div className="blog-card-body">
         <div className="reading-time">
           {" "}
-          <i class="fas fa-solid fa-clock"></i>
+          <i className="fas fa-solid fa-clock"></i>
           <span>{time} min read</span>
         </div>
         <a className="blog-title" href={link} target="_blank">
