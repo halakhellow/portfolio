@@ -2,6 +2,7 @@ import JavaScriptUnderTheHood from "../images/thumbnails/javascript-under-the-ho
 import dynamicProgramming from "../images/thumbnails/dynamic-programming.png";
 import etlElt from "../images/thumbnails/etl-elt.png";
 import makeAutomation from "../images/thumbnails/make-automation.png";
+import companionApp from "../images/thumbnails/companion-app.png";
 
 const blogPostsDetails = [
   {
@@ -39,6 +40,15 @@ const blogPostsDetails = [
     link: "https://medium.com/@halakhellow/embracing-the-magic-of-automation-with-make-platform-6774af24d6da",
     time: "4",
     date: "October 12th, 2023",
+  },
+  {
+    imgSrc: companionApp,
+    title: "Empowering interviews with the TalentLift companion app",
+    description:
+      "Discover the features of the TalentLift companion app which is a fit-to-purpose application to support large-scale virtual recruitment events",
+    link: "https://www.talentlift.ca/empowering-interviews-with-the-talentlift-companion-app-a-case-study-for-launching-large-scale-virtual-recruitment-events/",
+    time: "3",
+    date: "November 15th, 2023",
   },
 ];
 
