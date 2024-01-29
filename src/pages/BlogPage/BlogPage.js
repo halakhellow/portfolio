@@ -14,7 +14,15 @@ let BlogsPage = () => {
       <div className="page-content">
         <Header />
         <h3>
-          Check my published articles on <span>Medium</span> platform
+          Check my published articles on{" "}
+          <a
+            className="link-in-text"
+            href="https://medium.com/@halakhellow"
+            target="_blank"
+          >
+            Medium
+          </a>{" "}
+          platform
         </h3>
         <div className="blogs">
           {blogPostsDetails.map((post) => (
