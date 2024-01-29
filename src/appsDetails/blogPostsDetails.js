@@ -3,6 +3,7 @@ import dynamicProgramming from "../images/thumbnails/dynamic-programming.png";
 import etlElt from "../images/thumbnails/etl-elt.png";
 import makeAutomation from "../images/thumbnails/make-automation.png";
 import companionApp from "../images/thumbnails/companion-app.png";
+import thinkific from "../images/thumbnails/thinkific-logo.webp";
 
 const blogPostsDetails = [
   {
@@ -45,10 +46,19 @@ const blogPostsDetails = [
     imgSrc: companionApp,
     title: "Empowering interviews with the TalentLift companion app",
     description:
-      "Discover the features of the TalentLift companion app which is a fit-to-purpose application to support large-scale virtual recruitment events",
+      "Discover the features of the TalentLift companion app which is a fit-to-purpose application to support large-scale virtual recruitment events.",
     link: "https://www.talentlift.ca/empowering-interviews-with-the-talentlift-companion-app-a-case-study-for-launching-large-scale-virtual-recruitment-events/",
     time: "3",
     date: "November 15th, 2023",
+  },
+  {
+    imgSrc: thinkific,
+    title: "TalentLift's learning path powered by Thinkific",
+    description:
+      "TalentLift has adopted Thinkific software to create courses and provide a holistic support system that empowers displaced talents throughout their journeys to thrive in their new environments.",
+    link: "https://www.talentlift.ca/partners-in-our-mission-make-great-products-talentlifts-learning-path-powered-by-thinkific/",
+    time: "3",
+    date: "January 19th, 2024",
   },
 ];
 
