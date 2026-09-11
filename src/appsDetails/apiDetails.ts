@@ -1,6 +1,8 @@
 import cookiezAPI from "../images/cookiezAPI.png";
 
-const apiDetails = [
+import type { AppDetail } from "./types";
+
+const apiDetails: AppDetail[] = [
   {
     title: "COOKIEZ API",
     imageSrc: cookiezAPI,

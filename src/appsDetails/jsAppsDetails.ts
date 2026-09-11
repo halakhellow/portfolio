@@ -2,7 +2,9 @@ import githubAppImg from "../images/githubApp.png";
 import moviesAppImg from "../images/moviesApp.png";
 import xoAppImg from "../images/xoApp.png";
 
-const jsAppsDetails = [
+import type { AppDetail } from "./types";
+
+const jsAppsDetails: AppDetail[] = [
   {
     title: "GITHUB USERS' INFOS",
     imageSrc: githubAppImg,

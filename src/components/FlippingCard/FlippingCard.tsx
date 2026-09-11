@@ -1,8 +1,11 @@
-import React from "react";
-
 import "./FlippingCard.css";
 
-const FlippingCard = ({ skill, icon }) => {
+type FlippingCardProps = {
+  skill: string;
+  icon: string;
+};
+
+const FlippingCard = ({ skill, icon }: FlippingCardProps) => {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">

@@ -1,9 +1,15 @@
-/* eslint-disable react/jsx-no-target-blank */
-import React from "react";
-
 import "./BlogCard.css";
 
-let BlogCard = ({ imgSrc, time, title, date, description, link }) => {
+type BlogCardProps = {
+  imgSrc: string;
+  time: string;
+  title: string;
+  date: string;
+  description: string;
+  link: string;
+};
+
+const BlogCard = ({ imgSrc, time, title, date, description, link }: BlogCardProps) => {
   return (
     <div className="blog-card">
       <div className="blog-card-header">
@@ -11,11 +17,10 @@ let BlogCard = ({ imgSrc, time, title, date, description, link }) => {
       </div>
       <div className="blog-card-body">
         <div className="reading-time">
-          {" "}
           <i className="fas fa-solid fa-clock"></i>
           <span>{time} min read</span>
         </div>
-        <a className="blog-title" href={link} target="_blank">
+        <a className="blog-title" href={link} target="_blank" rel="noreferrer">
           <h2>{title}</h2>
         </a>
         <span className="blog-date">{date}</span>

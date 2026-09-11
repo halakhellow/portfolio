@@ -1,14 +1,11 @@
-import React from "react";
-import { nanoid } from "nanoid";
-
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-
-import "./BlogPage.css";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import blogPostsDetails from "../../appsDetails/blogPostsDetails";
 
-let BlogsPage = () => {
+import "./BlogPage.css";
+
+const BlogPage = () => {
   return (
     <div className="blogs-page page">
       <div className="page-content">
@@ -19,6 +16,7 @@ let BlogsPage = () => {
             className="link-in-text"
             href="https://medium.com/@halakhellow"
             target="_blank"
+            rel="noreferrer"
           >
             Medium
           </a>{" "}
@@ -27,7 +25,7 @@ let BlogsPage = () => {
         <div className="blogs">
           {blogPostsDetails.map((post) => (
             <BlogCard
-              key={nanoid()}
+              key={post.link}
               imgSrc={post.imgSrc}
               title={post.title}
               description={post.description}
@@ -43,4 +41,4 @@ let BlogsPage = () => {
   );
 };
 
-export default BlogsPage;
+export default BlogPage;

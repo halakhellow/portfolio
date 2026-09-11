@@ -1,12 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import "./SectionItem.css";
 
-let SectionItem = ({ name, faClass }) => {
-  let linkRef = name === "Portfolio" ? "work" : name.toLowerCase();
+type SectionItemProps = {
+  name: string;
+  faClass: string;
+};
+
+const SectionItem = ({ name, faClass }: SectionItemProps) => {
+  const linkRef = name === "Portfolio" ? "work" : name.toLowerCase();
   return (
-    <Link to={`/portfolio/${linkRef}`} className="section-item">
+    <Link to={`/${linkRef}`} className="section-item">
       <div className="section-item-infos">
         <span className={`${faClass} section-item-icon`}></span>
         <p className="section-item-name">{name}</p>

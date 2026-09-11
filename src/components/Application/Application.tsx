@@ -1,11 +1,16 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { ModalContext, AppContext } from "../../App";
 import CustomBtn from "../CustomBtn/CustomBtn";
 
 import "./Application.css";
 
-const Application = ({ title, imageSrc }) => {
+type ApplicationProps = {
+  title: string;
+  imageSrc: string;
+};
+
+const Application = ({ title, imageSrc }: ApplicationProps) => {
   const [, setModalOpen] = useContext(ModalContext);
   const [, setAppTitle] = useContext(AppContext);
   return (

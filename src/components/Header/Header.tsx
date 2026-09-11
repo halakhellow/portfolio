@@ -1,19 +1,20 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../images/logo.png";
 
 import "./Header.css";
 
-let Header = ({ home }) => {
+type HeaderProps = {
+  home?: boolean;
+};
+
+const Header = ({ home }: HeaderProps) => {
   return (
     <div className="header">
-      <Link to="/portfolio">
+      <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
-      {home ? (
-        ""
-      ) : (
+      {home ? null : (
         <div className="header-sections">
           <input id="menu-toggle" type="checkbox" />
           <label className="menu-button-container" htmlFor="menu-toggle">
@@ -22,22 +23,22 @@ let Header = ({ home }) => {
           <div className="dark-bg"></div>
           <ul className="menu">
             <li>
-              <NavLink to="/portfolio/about" activeClassName="active">
+              <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio/work" activeClassName="active">
+              <NavLink to="/work" className={({ isActive }) => (isActive ? "active" : "")}>
                 Portfolio
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio/blog" activeClassName="active">
+              <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "")}>
                 Blog
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio/contact" activeClassName="active">
+              <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
                 Contact
               </NavLink>
             </li>
