@@ -8,9 +8,10 @@ type CustomBtnProps = {
   anchorLink?: boolean;
   link?: string;
   onClick?: MouseEventHandler<HTMLAnchorElement>;
+  disabled?: boolean;
 };
 
-const CustomBtn = ({ text, type, anchorLink, link, onClick }: CustomBtnProps) => {
+const CustomBtn = ({ text, type, anchorLink, link, onClick, disabled }: CustomBtnProps) => {
   const downloadBtn = text === "Download";
   return anchorLink ? (
     <a
@@ -24,7 +25,7 @@ const CustomBtn = ({ text, type, anchorLink, link, onClick }: CustomBtnProps) =>
       {text}
     </a>
   ) : (
-    <button className="custom-button" type={type}>
+    <button className="custom-button" type={type} disabled={disabled}>
       {text}
     </button>
   );

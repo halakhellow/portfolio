@@ -25,7 +25,7 @@ const ContactPage = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>();
 
   const showSuccessToast = () => {
@@ -100,7 +100,7 @@ const ContactPage = () => {
             })}
           ></textarea>
           {errors.message && <span className="error-message">Please enter a message</span>}
-          <CustomBtn text="SEND" type="submit" />
+          <CustomBtn text={isSubmitting ? "SENDING..." : "SEND"} type="submit" disabled={isSubmitting} />
         </form>
 
         <ToastContainer />
