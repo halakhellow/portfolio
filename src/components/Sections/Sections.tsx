@@ -1,8 +1,6 @@
-import React from "react";
-
 import SectionItem from "../SectionItem/SectionItem";
 
-let Sections = () => {
+const Sections = () => {
   return (
     <div className="sections">
       <SectionItem name="About" faClass="fas fa-info-circle" />

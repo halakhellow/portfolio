@@ -1,9 +1,7 @@
-import React from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import "animate.css/animate.min.css";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -16,16 +14,21 @@ const bounce = cssTransition({
   exit: "animate__animated animate__bounceOut",
 });
 
+type ContactFormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 const ContactPage = () => {
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm();
+  } = useForm<ContactFormValues>();
 
-  // Function that displays a success toast on bottom right of the page when form submission is successful
-  const animateCss = () => {
+  const showSuccessToast = () => {
     toast(`Thank you for connecting${"\xa0".repeat(2)}:)`, {
       transition: bounce,
       position: "bottom-right",
@@ -33,25 +36,18 @@ const ContactPage = () => {
     });
   };
 
-  // Function called on submit that uses emailjs to send email of valid contact form
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: ContactFormValues) => {
     const { name, email, message } = data;
     try {
-      const templateParams = {
-        name,
-        email,
-        message,
-      };
-
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_PUBLIC_KEY
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        { name, email, message },
+        { publicKey: import.meta.env.VITE_PUBLIC_KEY }
       );
 
       reset();
-      animateCss();
+      showSuccessToast();
     } catch (e) {
       console.log(e);
     }
@@ -61,14 +57,13 @@ const ContactPage = () => {
     <div className="contact-page page">
       <div className="page-content">
         <Header />
-        <h1>Let's Connect !</h1>
+        <h1>Let's connect!</h1>
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
-          <label htmlFor="name"> Name :</label>
-          <div class="input-icons">
-            <i class="fa fa-user icon"></i>
+          <label htmlFor="name">Name:</label>
+          <div className="input-icons">
+            <i className="fa fa-user icon"></i>
             <input
               id="name"
-              name="name"
               className="input-field"
               type="text"
               {...register("name", {
@@ -80,15 +75,12 @@ const ContactPage = () => {
               })}
             />
           </div>
-          {errors.name && (
-            <span className="error-message">{errors.name.message}</span>
-          )}
-          <label htmlFor="email"> Email :</label>
-          <div class="input-icons">
-            <i class="fa fa-envelope icon"></i>
+          {errors.name && <span className="error-message">{errors.name.message}</span>}
+          <label htmlFor="email">Email:</label>
+          <div className="input-icons">
+            <i className="fa fa-envelope icon"></i>
             <input
               id="email"
-              name="email"
               type="email"
               {...register("email", {
                 required: true,
@@ -98,21 +90,16 @@ const ContactPage = () => {
             />
           </div>
           {errors.email && (
-            <span className="error-message">
-              Please enter a valid email address
-            </span>
+            <span className="error-message">Please enter a valid email address</span>
           )}
-          <label htmlFor="message"> Message :</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
-            name="message"
             {...register("message", {
               required: true,
             })}
           ></textarea>
-          {errors.message && (
-            <span className="error-message">Please enter a message</span>
-          )}
+          {errors.message && <span className="error-message">Please enter a message</span>}
           <CustomBtn text="SEND" type="submit" />
         </form>
 

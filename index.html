@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Hala Alkhellow — Full stack developer. Portfolio, projects, and writing."
+    />
+
+    <meta property="og:title" content="Hala Alkhellow | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full stack developer. Portfolio, projects, and writing."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://halakhellow.github.io/portfolio" />
+    <meta property="og:image" content="https://halakhellow.github.io/portfolio/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect: parses ?p=/path from 404.html handoff and
+      // restores the intended URL before React Router boots.
+      (function (location) {
+        if (location.search) {
+          var q = {};
+          location.search
+            .slice(1)
+            .split("&")
+            .forEach(function (v) {
+              var a = v.split("=");
+              q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
+            });
+          if (q.p !== undefined) {
+            window.history.replaceState(
+              null,
+              null,
+              location.pathname.slice(0, -1) +
+                (q.p || "") +
+                (q.q ? "?" + q.q : "") +
+                location.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+
+    <script src="https://kit.fontawesome.com/c339c56859.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+    <title>Hala Alkhellow | Full Stack Developer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

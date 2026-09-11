@@ -5,19 +5,21 @@ import makeAutomation from "../images/thumbnails/make-automation.png";
 import companionApp from "../images/thumbnails/companion-app.png";
 import thinkific from "../images/thumbnails/thinkific-logo.webp";
 
-const blogPostsDetails = [
+import type { BlogPost } from "./types";
+
+const blogPostsDetails: BlogPost[] = [
   {
     imgSrc: JavaScriptUnderTheHood,
-    title: "JavaScript Under The Hood",
+    title: "JavaScript under the hood",
     description:
-      "The core concepts behind JavaScript programming language including the Call Stack, Execution Context, Event Loop, JIT(Just In Time) Compiler, and JS Engine.",
+      "The core concepts behind JavaScript programming language including the call stack, execution context, event loop, JIT (just in time) compiler, and JS engine.",
     link: "https://medium.com/@halakhellow/javascript-under-the-hood-623add30830c",
     time: "6",
     date: "November 28th, 2022",
   },
   {
     imgSrc: dynamicProgramming,
-    title: "Dynamic Programming",
+    title: "Dynamic programming",
     description:
       "The concept of dynamic programming and its applications in problem-solving. Demonstrating its implementation on the classic Fibonacci problem, using both memoization and tabulation techniques.",
     link: "https://medium.com/@halakhellow/dynamic-programming-memoization-vs-tabulation-5d1ee8075327",
@@ -26,16 +28,16 @@ const blogPostsDetails = [
   },
   {
     imgSrc: etlElt,
-    title: "ETL vs. ELT in Data Engineering",
+    title: "ETL vs. ELT in data engineering",
     description:
-      "Two acronyms often pop up In the ever-evolving landscape of data engineering: ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform). These processes are essential in the data journey from source to analysis, shaping the foundation of data-driven decision-making.",
+      "Two acronyms often pop up in the ever-evolving landscape of data engineering: ETL (extract, transform, load) and ELT (extract, load, transform). These processes are essential in the data journey from source to analysis, shaping the foundation of data-driven decision-making.",
     link: "https://medium.com/@halakhellow/etl-vs-elt-in-data-engineering-extract-transform-load-5f3fafeac576",
     time: "5",
     date: "September 15th, 2023",
   },
   {
     imgSrc: makeAutomation,
-    title: "Embracing the Magic of Automation with Make Platform",
+    title: "Embracing the magic of automation with Make platform",
     description:
       "In the world of automation, the Make platform stands as a strong supporter, empowering individuals and organizations to streamline their tasks, boost productivity, and eliminate the need for repetitive manual work.",
     link: "https://medium.com/@halakhellow/embracing-the-magic-of-automation-with-make-platform-6774af24d6da",
